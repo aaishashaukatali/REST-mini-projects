@@ -1,0 +1,25 @@
+body {
+  font-family: cursive;
+  margin: 1rem;
+  padding: 1rem;
+}
+h1 {
+  color: #b92b27;
+}
+h4 {
+  font-family: "Times New Roman", Times, serif;
+}
+div {
+  background-color: lavender;
+}
+button {
+  border: 2px solid #b92b27;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 700;
+}
+button:hover {
+  background-color: #eb6a65;
+}

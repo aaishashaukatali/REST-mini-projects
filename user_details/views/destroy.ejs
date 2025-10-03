@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 mt-5">
+                <h4>Want to it permanently?</h4>
+
+
+
+
+
+
+                <p class="text-muted">Enter your email & password to delete the user all detail.
+                    <span class="text-primary"><%=data.email%></span> & <span class="text-primary"><%= data.password %></span>
+                </p>
+
+                <form action="/users/<%= data.id %>?_method=DELETE" method="POST">
+                    <div class="form-group mt-4">
+
+                        <label for="email" class="form-label">Email address</label>
+
+                        <input name="email" id="email" type="email" class="form-control mt-2"
+                            placeholder="Enter Email ID">
+                    </div>
+                    <div class="form-group mt-4">
+
+                        <label for="password" class="form-label">Password</label>
+
+                        <input name="password" id="password" type="password" class="form-control mt-2"
+                            placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-danger mt-4">Delete</button>
+
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+
+</html>

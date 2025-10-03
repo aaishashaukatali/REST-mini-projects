@@ -1,0 +1,24 @@
+body {
+  padding: 2rem;
+}
+
+.chats {
+  border: 1px solid black;
+  width: 300px;
+  border-radius: 0.6rem;
+  padding: 0.8rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.msg {
+  /* background: linear-gradient(to left,red, violet); */
+  background-color: lightcoral;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+}
+
+.btns{
+  display: flex;
+  justify-content: end;
+}
